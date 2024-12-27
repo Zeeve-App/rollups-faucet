@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { ethers } from 'ethers'
 import { ClipLoader } from "react-spinners"
 import Select from 'react-select'
+import { getConfig } from "../config"
 
 import './styles/FaucetForm.css'
 import ReCaptcha from './ReCaptcha'
@@ -67,13 +68,14 @@ const FaucetForm = (props: any) => {
         updateFaucetAddress()
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [chain, chainConfigs])
+    const config = getConfig();
 
     useEffect(() => {
         let newOptions: DropdownOption[] = []
         
         chainConfigs?.forEach((chain: any, i: number) => {
             let item = <div className='select-dropdown'>
-                <img alt = { chain.NAME } src = { chain.IMAGE } />
+                <img alt = { chain.NAME } src={config.brand.favicon ?? chain.IMAGE} />
                 { chain.NAME }
 
                 {
@@ -110,7 +112,7 @@ const FaucetForm = (props: any) => {
                 <img alt = { chain.NAME } src = { chain.IMAGE } />
                 { chain.ID === ch ? chain.TOKEN : chain.NAME }
 
-                <span style={{color: 'rgb(180, 180, 183)', fontSize: "10px", marginLeft: "5px"}}>
+                <span style={{color: 'rgb(180, 180, 183)', fontSize: "10px", marginLeft: "5px", alignSelf: "baseline", marginTop: "5px"}}>
                     {
                         chain.CONTRACTADDRESS ?
                         "ERC20" :
@@ -348,6 +350,8 @@ const FaucetForm = (props: any) => {
     }
 
     const customStyles = {
+        indicatorSeparator: (base: any) => ({}),
+        dropdownIndicator: (base: any) => ({...base, '& svg': { display: 'none' }}),
         control: (base: any, state: { isFocused: any }) => ({
             ...base,
             // background: "hsla(0,0%,100%,0.5)",
@@ -416,6 +420,7 @@ const FaucetForm = (props: any) => {
                 onChange={updateChain}
                 styles={customStyles}
                 getOptionValue ={(option: any)=>option.search}
+                isDisabled={true}
             />
         </div>
     )
@@ -430,6 +435,7 @@ const FaucetForm = (props: any) => {
                 onChange={updateToken}
                 styles={customStyles}
                 getOptionValue ={(option: any)=>option.search}
+                isDisabled={true}
             />
         </div>
     )

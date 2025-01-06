@@ -33,7 +33,7 @@ const FaucetForm = (props: any) => {
     txHash: null,
     message: null,
   });
-
+  const [errorSendingToken, setErrorSendingToken] = useState<boolean>(false);
   const recaptcha: ReCaptcha = new ReCaptcha(
     props.config.SITE_KEY,
     props.config.ACTION,
@@ -320,7 +320,7 @@ const FaucetForm = (props: any) => {
     let data: any;
     try {
       setIsLoading(true);
-
+      setErrorSendingToken(false);
       const { token, v2Token } = await getCaptchaToken();
 
       let { chain, erc20 } = getChainParams();
@@ -336,9 +336,10 @@ const FaucetForm = (props: any) => {
       setTxSuccessful(true);
     } catch (err: any) {
       data = err?.response?.data || err;
+      setErrorSendingToken(true);
     }
 
-    if (typeof `data`?.message == "string") {
+    if (typeof data?.message == "string") {
       if (data.message.includes("Captcha verification failed")) {
         setIsV2(true);
         !isV2 && recaptcha?.loadV2Captcha(props.config.V2_SITE_KEY);
@@ -481,6 +482,15 @@ const FaucetForm = (props: any) => {
     setTxSuccessful(false);
   };
 
+  useEffect(() => {
+    if (!txSuccessful) {
+      setSendTokenResponse({
+        txHash: null,
+        message: null,
+      });
+      setErrorSendingToken(false);
+    }
+  }, [txSuccessful, address]);
   const toString = (mins: number): string => {
     if (mins < 60) {
       return `${mins} minute${mins > 1 ? "s" : ""}`;
@@ -524,7 +534,10 @@ const FaucetForm = (props: any) => {
                 </div>
                 <div className="field">
                   <span>Enter your wallet address</span>
-                  <div className="address-input">
+                  <div
+                    className="address-input"
+                    style={!errorSendingToken ? {} : { borderColor: "#D51111" }}
+                  >
                     <input
                       className="font-catamaran"
                       value={inputAddress || ""}
@@ -534,10 +547,30 @@ const FaucetForm = (props: any) => {
                   </div>
                   <span>
                     Drops are limited to
-                    <span style={{ color: "white" }}>
+                    <span
+                      style={
+                        !errorSendingToken
+                          ? { color: "white" }
+                          : { color: "#D51111" }
+                      }
+                    >
                       {chainConfigs[token!]?.RATELIMIT?.MAX_LIMIT} request in{" "}
                       {toString(chainConfigs[token!]?.RATELIMIT?.WINDOW_SIZE)}.
                     </span>
+                  </span>
+                  <span
+                    className="rate-limit-text"
+                    style={
+                      !errorSendingToken
+                        ? { display: "none" }
+                        : {
+                            display: "block",
+                            color: "#D51111",
+                            marginTop: "5px",
+                          }
+                    }
+                  >
+                    {sendTokenResponse?.message}
                   </span>
                 </div>
                 <div
@@ -545,10 +578,6 @@ const FaucetForm = (props: any) => {
                     display: sendTokenResponse?.txHash ? "none" : "block",
                   }}
                 >
-                  <span className="rate-limit-text" style={{ color: "red" }}>
-                    {sendTokenResponse?.message}
-                  </span>
-
                   <div
                     className="v2-recaptcha"
                     style={{ marginTop: "10px" }}
@@ -588,35 +617,6 @@ const FaucetForm = (props: any) => {
                         {chainConfigs[token || 0]?.TOKEN}
                       </span>
                     )}
-                  </button>
-                </div>
-                <div
-                  style={{
-                    display: sendTokenResponse?.txHash ? "block" : "none",
-                  }}
-                >
-                  <p className="rate-limit-text font">
-                    {sendTokenResponse?.message}
-                  </p>
-                  <div>
-                    <span className="bold-text font">Transaction ID</span>
-                    <p className="rate-limit-text">
-                      <a
-                        target={"_blank"}
-                        href={
-                          chainConfigs[token!]?.EXPLORER +
-                          "/tx/" +
-                          sendTokenResponse?.txHash
-                        }
-                        rel="noreferrer"
-                      >
-                        {sendTokenResponse?.txHash}
-                      </a>
-                    </p>
-                  </div>
-
-                  <button className="back-button" onClick={back}>
-                    Back
                   </button>
                 </div>
                 <div style={{ border: "1px solid white" }} />

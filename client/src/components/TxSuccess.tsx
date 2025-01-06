@@ -21,7 +21,12 @@ const TxSuccess = ({ msg, txHash, explorerUrl, goBack }: TxSuccessProps) => {
           </div>
         </div>
         <div className="field">
-          <a className="explorer-btn" href={explorerUrl}>
+          <a
+            className="explorer-btn"
+            href={explorerUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
             <img className="explorer-btn-icon" alt="explorer-btn-icon" />
             View BLOCK EXPLORER
           </a>

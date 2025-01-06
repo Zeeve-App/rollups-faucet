@@ -26,7 +26,7 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="app" id={theme}>
         <FaucetForm axios={axios} config={config} />
-        <img alt="powered-by-logo" className="power-by-logo"/>
+        {/* <img alt="powered-by-logo" className="power-by-logo"/> */}
       </div>
     </ThemeContext.Provider>
   );

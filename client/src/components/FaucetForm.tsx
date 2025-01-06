@@ -388,9 +388,10 @@ const FaucetForm = (props: any) => {
       boxShadow:
         "0px 90.9961px 72.7969px rgba(41, 72, 152, 0.05), 0px 58.9789px 42.6334px rgba(41, 72, 152, 0.037963), 0px 35.0503px 23.1872px rgba(41, 72, 152, 0.0303704), 0px 18.1992px 11.8295px rgba(41, 72, 152, 0.025), 0px 7.4145px 5.9316px rgba(41, 72, 152, 0.0196296), 0px 1.68511px 2.86469px rgba(41, 72, 152, 0.012037)",
       cursor: "pointer",
-      // "&:hover": {
-      //     borderColor: "white"
-      // }
+      "&:hover": {
+        borderColor: "#01B4E2",
+        bgColor: "#00B5E20D",
+      },
     }),
     menu: (base: any) => ({
       ...base,
@@ -519,13 +520,13 @@ const FaucetForm = (props: any) => {
               <div className="box-header">
                 <div className="field">
                   <span>
-                    <span>Select Network</span>
+                    <span>Network</span>
                   </span>
 
                   <ChainDropdown />
                 </div>
                 <div className="field">
-                  <span className="field-heading">Select Token</span>
+                  <span className="field-heading">Token</span>
                   <TokenDropdown />
                   <span className="font-light">
                     Faucet balance: {Math.round((balance / 1e9) * 100) / 100}{" "}
@@ -546,7 +547,7 @@ const FaucetForm = (props: any) => {
                     />
                   </div>
                   <span>
-                    Drops are limited to
+                    Drops are limited to{" "}
                     <span
                       style={
                         !errorSendingToken
@@ -554,8 +555,13 @@ const FaucetForm = (props: any) => {
                           : { color: "#D51111" }
                       }
                     >
-                      {chainConfigs[token!]?.RATELIMIT?.MAX_LIMIT} request in{" "}
-                      {toString(chainConfigs[token!]?.RATELIMIT?.WINDOW_SIZE)}.
+                      {`${
+                        chainConfigs[token!]?.RATELIMIT?.MAX_LIMIT
+                      } request in 
+                        ${toString(
+                          chainConfigs[token!]?.RATELIMIT?.WINDOW_SIZE
+                        )}`}
+                      .
                     </span>
                   </span>
                   <span
@@ -580,7 +586,7 @@ const FaucetForm = (props: any) => {
                 >
                   <div
                     className="v2-recaptcha"
-                    style={{ marginTop: "10px" }}
+                    style={{ marginTop: "10px", marginBottom: "10px" }}
                   ></div>
 
                   <div className="beta-alert">

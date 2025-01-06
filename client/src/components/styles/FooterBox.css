@@ -15,24 +15,35 @@
     backdrop-filter: blur(50px);
 }
 
+.footer-box-new {
+    max-width: 520px;
+    width: 100%;
+    border-radius: 4px;
+    height: fit-content;
+    margin-top: 28px;
+}
 .return-address {
     display: flex;
     align-items: center;
     color: rgb(149, 149, 149);
     height: 45px;
-    margin-top: 20px;
+    margin-top: 6px;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .return-address > input {
     background-color: transparent;
     cursor: pointer;
     border-style: none;
-    color: inherit;
+    font-family: "Catamaran";
+    text-transform: uppercase;
+    color: white;
+    padding: 14px 10px;
     outline: none;
-    text-align: center;
     width: 100%;
-    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .footer-buttons {

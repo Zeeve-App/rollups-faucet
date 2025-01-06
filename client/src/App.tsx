@@ -1,7 +1,4 @@
 import FaucetForm from "./components/FaucetForm";
-import Contribute from "./components/Contribute";
-import ToggleTheme from "./components/ToggleTheme";
-
 import axios, { config } from "./configure";
 import "./App.css";
 import "./styleConfig";
@@ -29,8 +26,7 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="app" id={theme}>
         <FaucetForm axios={axios} config={config} />
-        {/*<Contribute /> */}
-{/*         <ToggleTheme theme={theme} setTheme={toggleTheme} /> */}
+        <img alt="powered-by-logo" className="power-by-logo"/>
       </div>
     </ThemeContext.Provider>
   );

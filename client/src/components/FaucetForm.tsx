@@ -388,9 +388,10 @@ const FaucetForm = (props: any) => {
       boxShadow:
         "0px 90.9961px 72.7969px rgba(41, 72, 152, 0.05), 0px 58.9789px 42.6334px rgba(41, 72, 152, 0.037963), 0px 35.0503px 23.1872px rgba(41, 72, 152, 0.0303704), 0px 18.1992px 11.8295px rgba(41, 72, 152, 0.025), 0px 7.4145px 5.9316px rgba(41, 72, 152, 0.0196296), 0px 1.68511px 2.86469px rgba(41, 72, 152, 0.012037)",
       cursor: "pointer",
-      // "&:hover": {
-      //     borderColor: "white"
-      // }
+      "&:hover": {
+        borderColor: "#01B4E2",
+        bgColor: "#00B5E20D",
+      },
     }),
     menu: (base: any) => ({
       ...base,
@@ -439,7 +440,7 @@ const FaucetForm = (props: any) => {
   };
 
   const ChainDropdown = () => (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "100%", borderColor: "red" }}>
       <Select
         className="react-select-container"
         classNamePrefix="react-select"
@@ -555,7 +556,9 @@ const FaucetForm = (props: any) => {
                       }
                     >
                       {chainConfigs[token!]?.RATELIMIT?.MAX_LIMIT} request in{" "}
-                      {toString(chainConfigs[token!]?.RATELIMIT?.WINDOW_SIZE)}.
+                      {" " +
+                        toString(chainConfigs[token!]?.RATELIMIT?.WINDOW_SIZE)}
+                      .
                     </span>
                   </span>
                   <span

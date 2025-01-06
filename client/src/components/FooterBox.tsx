@@ -21,16 +21,16 @@ function outFunc(): void {
 export default function FooterBox(props: any) {
     return (
         <div className="container">
-            <div className="footer-box">
+            {/* <div className="footer-box">
                 <div className="font" style={{fontSize: "13px", padding: "20px"}}>
                     Use the buttons below to add <b>{props.chainConfigs[props.chain!]?.NAME}</b> to your browser wallet extension
                     or visit the Subnet's block explorer.
                     <AddNetwork config={props.chainConfigs[props.chain!]} token={props.chainConfigs[props.token!]}/>
                 </div>
             </div>
-            
-            <div className='footer-box'>
-                <div className="font" style={{fontSize: "13px", padding: "20px"}}>
+             */}
+            <div className='footer-box-new'>
+                <div style={{fontSize: "14px", color: "#FFFFFFB2"}}>
                     Once you are done with the testing, feel free to send the remaining coins
                     to the following faucet address.
 
@@ -41,7 +41,7 @@ export default function FooterBox(props: any) {
                         
                         <input id="return-address-input" value={props.faucetAddress} disabled/>
 
-                        <span style={{marginRight: "10px", marginTop: "2px"}}>
+                        <span style={{marginRight: "10px"}}>
                             <img className="copy-icon" alt="copy" style={{width: "20px", height: "20px", display: "list-item"}}/>
                         </span>
                     </div>

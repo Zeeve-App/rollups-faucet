@@ -1,88 +1,138 @@
 :root {
-    --banner-dark-logo: url(../public/banner_dark.png);
-    --primary-color: #3498db; /* Default if JS doesn't set it */
-    --secondary-color: #5eff00;
+  --banner-dark-logo: url(../public/banner_dark.png);
+  --primary-color: #3498db; /* Default if JS doesn't set it */
+  --secondary-color: #5eff00;
 }
 
 body::-webkit-scrollbar {
-    width: 2px;
+  width: 2px;
 }
 
 body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgb(0, 0, 0);
+  box-shadow: inset 0 0 6px rgb(0, 0, 0);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(113, 113, 113);
+  background-color: rgb(113, 113, 113);
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
 
 .app {
-    min-height: 100%;
-    font-family: Avenir,Helvetica,Arial,sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-size: cover;
+  min-height: 100%;
+  font-family: "Inter", "Catamaran";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover;
+  background-color: #0b0f19e5;
 }
 
 #light {
-    background-image: url(../public/background_dcm.svg);
+  background-image: url(../public/background_dcm.svg);
 }
 
 #dark {
-    background: var(--primary-color);
+  background: linear-gradient(rgba(11, 15, 25, 0.9), rgba(11, 15, 25, 0.9)),
+    url(../public/bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  mix-blend-mode: multiply;
+  background-position: center;
 }
 
-#light .box, #light .footer-box {
-    background-color: hsla(0,0%,100%,0.5);
+#light .box,
+#light .footer-box {
+  background-color: hsla(0, 0%, 100%, 0.5);
 }
 
-#dark .box, #dark .footer-box {
-    background-color: var(--secondary-color);
+#dark .box,
+#dark .footer-box {
+  background-color: rgba(1, 180, 226, 0.1);
 }
 
 #light .banner {
-    background-image: url(../public/banner_light.png);
+  background-image: url(../public/banner_light.png);
 }
 
 #dark .banner {
-    background-image: var(--banner-dark-logo);
+  background-image: var(--banner-dark-logo);
 }
 
-#light .return-address, #light .address-input, #light .add-network, #light .send-button-disabled, #light .back-button, #light .contribute-button, #light .send-button, #light .react-select__control{
-    background-color: #fff;
-    /* border: solid 1px rgb(2, 3, 129); */
+#light .return-address,
+#light .address-input,
+#light .add-network,
+#light .back-button,
+#light .contribute-button,
+#light .react-select__control {
+  background-color: #fff;
+  /* border: solid 1px rgb(2, 3, 129); */
 }
 
-#dark .return-address, #dark .address-input, #dark .add-network, #dark .send-button-disabled, #dark .back-button, #dark .contribute-button, #dark .send-button, #dark .react-select__control {
-    /* border: solid 1px #fe68c2; */
-    background-color: #1b1832;
+#dark .return-address,
+#dark .address-input,
+#dark .add-network,
+#dark .back-button,
+#dark .contribute-button,
+#dark .react-select__control {
+  /* border: solid 1px #fe68c2; */
+  background-color: #ffffff1a;
+  border: 1px solid #d5d7da;
 }
 
 #light .copy-icon {
-    content: url(../public/copy_light.png);
+  content: url(../public/copy_light.png);
 }
 
 #dark .copy-icon {
-    content: url(../public/copy_dark.png);
+  content: url(../public/copy.svg);
 }
 
-#light .font, #light .back-button, #light a, #light .contribute-button, #light .address-input > input, #light .send-button, #light .react-select__single-value {
-    color: white;
+#light .font,
+#light .back-button,
+#light a,
+#light .contribute-button,
+#light .address-input > input,
+#light .react-select__single-value {
+  color: white;
 }
 
-#dark .font, #dark .back-button, #dark a, #dark .contribute-button, #dark .address-input > input, #dark .send-button, #dark .react-select__single-value {
-    color: white;
+#dark .font,
+#dark .back-button,
+#dark a,
+#dark .contribute-button,
+#dark .address-input > input,
+#dark .react-select__single-value {
+  color: white;
 }
 
+.font-light {
+  color: #ffffff80 !important;
+}
 @media screen and (max-width: 1010px) {
-    .app {
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
+  .app {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+
+.power-by-logo {
+  content: url(../public/power-by.svg);
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+}
+
+.font-catamaran {
+  font-family: "Catamaran";
+  text-transform: uppercase;
+}
+
+.font-bolder {
+  font-weight: 700;
 }

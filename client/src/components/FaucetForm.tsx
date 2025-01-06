@@ -520,13 +520,13 @@ const FaucetForm = (props: any) => {
               <div className="box-header">
                 <div className="field">
                   <span>
-                    <span>Select Network</span>
+                    <span>Network</span>
                   </span>
 
                   <ChainDropdown />
                 </div>
                 <div className="field">
-                  <span className="field-heading">Select Token</span>
+                  <span className="field-heading">Token</span>
                   <TokenDropdown />
                   <span className="font-light">
                     Faucet balance: {Math.round((balance / 1e9) * 100) / 100}{" "}
@@ -547,7 +547,7 @@ const FaucetForm = (props: any) => {
                     />
                   </div>
                   <span>
-                    Drops are limited to
+                    Drops are limited to{" "}
                     <span
                       style={
                         !errorSendingToken
@@ -555,9 +555,12 @@ const FaucetForm = (props: any) => {
                           : { color: "#D51111" }
                       }
                     >
-                      {chainConfigs[token!]?.RATELIMIT?.MAX_LIMIT} request in{" "}
-                      {" " +
-                        toString(chainConfigs[token!]?.RATELIMIT?.WINDOW_SIZE)}
+                      {`${
+                        chainConfigs[token!]?.RATELIMIT?.MAX_LIMIT
+                      } request in 
+                        ${toString(
+                          chainConfigs[token!]?.RATELIMIT?.WINDOW_SIZE
+                        )}`}
                       .
                     </span>
                   </span>
@@ -583,7 +586,7 @@ const FaucetForm = (props: any) => {
                 >
                   <div
                     className="v2-recaptcha"
-                    style={{ marginTop: "10px" }}
+                    style={{ marginTop: "10px", marginBottom: "10px" }}
                   ></div>
 
                   <div className="beta-alert">

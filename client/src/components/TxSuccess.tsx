@@ -23,7 +23,7 @@ const TxSuccess = ({ msg, txHash, explorerUrl, goBack }: TxSuccessProps) => {
         <div className="field">
           <a
             className="explorer-btn"
-            href={explorerUrl}
+            href={`${explorerUrl}tx/${txHash}`}
             target="_blank"
             rel="noreferrer"
           >

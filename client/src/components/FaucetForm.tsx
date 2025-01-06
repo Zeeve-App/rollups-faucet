@@ -440,7 +440,7 @@ const FaucetForm = (props: any) => {
   };
 
   const ChainDropdown = () => (
-    <div style={{ width: "100%", borderColor: "red" }}>
+    <div style={{ width: "100%" }}>
       <Select
         className="react-select-container"
         classNamePrefix="react-select"

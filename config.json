@@ -11,22 +11,22 @@
     },
     "evmchains": [
         {
-            "ID": "lumis-testnet",
-            "NAME": "Zeeve Testnet",
-            "TOKEN": "Zeeve",
-            "RPC": "https://rpc1.testnet.fomochain.io",
-            "CHAINID": 1,
-            "EXPLORER": "https://testnet.evm.fomoscan.io",
-            "IMAGE": "../../../faucet-icon-dark.png",
+            "ID": "testnet",
+            "NAME": "CarrChain Testnet",
+            "TOKEN": "CARR",
+            "RPC": "https://rpc-testnet.carrchain.io",
+            "CHAINID": 76672,
+            "EXPLORER": "https://testnet.carrscan.io",
+            "IMAGE": "/token.svg",
             "MAX_PRIORITY_FEE": "2000000000",
             "MAX_FEE": "100000000000",
-            "DRIP_AMOUNT": 2000000000,
+            "DRIP_AMOUNT": 1000000000,
             "RECALIBRATE": 30,
             "RATELIMIT": {
                 "MAX_LIMIT": 1,
                 "WINDOW_SIZE": 1440
             },
-            "NETWORK":"Zeeve"
+            "NETWORK":"CarrChain Testnet"
         }
     ],
     "erc20tokens": [

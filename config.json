@@ -16,7 +16,7 @@
             "TOKEN": "CARR",
             "RPC": "https://rpc-testnet.carrchain.io",
             "CHAINID": 76672,
-            "EXPLORER": "https://testnet.carrscan.io",
+            "EXPLORER": "https://testnet.carrscan.io/",
             "IMAGE": "/token.svg",
             "MAX_PRIORITY_FEE": "2000000000",
             "MAX_FEE": "100000000000",

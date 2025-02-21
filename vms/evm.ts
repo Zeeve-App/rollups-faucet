@@ -294,7 +294,16 @@ export default class EVM {
         }
 
         let signedTx
+        
         try {
+           
+            const estimatedGas = await this.web3.eth.estimateGas({
+              ...tx,
+              from: this.account.address,
+              gas: undefined,
+            });
+
+            tx.gas = estimatedGas;
             signedTx = await this.account.signTransaction(tx)
         } catch(err: any) {
             this.error = true

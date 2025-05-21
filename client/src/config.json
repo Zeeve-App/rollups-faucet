@@ -4,8 +4,8 @@
     "apiBaseEndpointDevelopment": "http://localhost:8000/api/",
     "apiTimeout": 10000,
     "CAPTCHA": {
-        "siteKey": "6Lefz0YqAAAAAG2J1iapmSSYE9lKg9cIb1YhF1jO",
-        "v2siteKey": "6Lefz0YqAAAAAG2J1iapmSSYE9lKg9cIb1YhF1jO", 
+        "siteKey": "6LfOoEIrAAAAAPveEh81PLKpMR0rohBpjgWTtdNX",
+        "v2siteKey": "6LfOoEIrAAAAAPveEh81PLKpMR0rohBpjgWTtdNX",
         "action": "faucetdrip"
     }
 }

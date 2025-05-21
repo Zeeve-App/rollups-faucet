@@ -12,11 +12,11 @@
     "evmchains": [
         {
             "ID": "testnet",
-            "NAME": "CarrChain Testnet",
-            "TOKEN": "CARR",
-            "RPC": "https://rpc-testnet.carrchain.io",
-            "CHAINID": 76672,
-            "EXPLORER": "https://testnet.carrscan.io/",
+            "NAME": "AcadChain Testnet",
+            "TOKEN": "ACAD",
+            "RPC": "https://rpc-testnet.acadchain.xyz",
+            "CHAINID": 736,
+            "EXPLORER": "https://explorer-testnet.acadchain.xyz",
             "IMAGE": "/token.svg",
             "MAX_PRIORITY_FEE": "2000000000",
             "MAX_FEE": "100000000000",
@@ -26,10 +26,8 @@
                 "MAX_LIMIT": 1,
                 "WINDOW_SIZE": 1440
             },
-            "NETWORK":"CarrChain Testnet"
+            "NETWORK": "AcadChain Testnet"
         }
     ],
-    "erc20tokens": [
-        
-    ]
+    "erc20tokens": []
 }

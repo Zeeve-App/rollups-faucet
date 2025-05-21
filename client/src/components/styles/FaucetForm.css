@@ -46,8 +46,8 @@
 
 .banner {
   background-repeat: no-repeat;
-  /* background-size: 140px; */
-  height: 37px;
+  background-size: 190px;
+  height: 80px;
   width: 296px;
 }
 
@@ -131,7 +131,7 @@
 }
 
 .send-button {
-  background-color: #01b4e2;
+  background-color: #5c51f4;
   padding: 10px auto;
   border-radius: 8px;
   height: 36px;
@@ -144,11 +144,11 @@
 }
 
 .send-button:hover {
-  background-color: #70bddc;
+  background-color: #3a59fe;
 }
 
 .send-button-disabled {
-  background-color: #01b4e2;
+  background-color: #5d89ff;
   padding: 10px auto;
   margin-top: 28px;
   height: 44px;

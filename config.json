@@ -16,7 +16,7 @@
             "TOKEN": "ACAD",
             "RPC": "https://rpc-testnet.acadchain.xyz",
             "CHAINID": 736,
-            "EXPLORER": "https://explorer-testnet.acadchain.xyz",
+            "EXPLORER": "https://explorer-testnet.acadchain.xyz/",
             "IMAGE": "/token.svg",
             "MAX_PRIORITY_FEE": "2000000000",
             "MAX_FEE": "100000000000",

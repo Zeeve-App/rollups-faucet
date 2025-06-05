@@ -18,8 +18,8 @@
             "CHAINID": 76672,
             "EXPLORER": "https://testnet.carrscan.io/",
             "IMAGE": "/token.svg",
-            "MAX_PRIORITY_FEE": "2000000000",
-            "MAX_FEE": "100000000000",
+            "MAX_PRIORITY_FEE": "20000000000000",
+            "MAX_FEE": "10000000000000",
             "DRIP_AMOUNT": 1000000000,
             "RECALIBRATE": 30,
             "RATELIMIT": {

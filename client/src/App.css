@@ -39,7 +39,7 @@ html {
 #dark {
   /* background: linear-gradient(rgba(11, 15, 25, 0.9), rgba(11, 15, 25, 0.9)),
     url(../public/bg.jpeg); */
-  background-color: #0f121c;
+  background-color: #1e1e1e;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -54,7 +54,7 @@ html {
 
 #dark .box,
 #dark .footer-box {
-  background-color: #12172a;
+  background-color: #333333;
 }
 
 #light .banner {

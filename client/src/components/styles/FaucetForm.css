@@ -131,7 +131,7 @@
 }
 
 .send-button {
-  background-color: #5c51f4;
+  background-color: #af6e5d;
   padding: 10px auto;
   border-radius: 8px;
   height: 36px;
@@ -144,11 +144,11 @@
 }
 
 .send-button:hover {
-  background-color: #3a59fe;
+  background-color: #b06958;
 }
 
 .send-button-disabled {
-  background-color: #5d89ff;
+  background-color: #af6e5d;
   padding: 10px auto;
   margin-top: 28px;
   height: 44px;

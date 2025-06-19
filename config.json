@@ -12,12 +12,12 @@
     "evmchains": [
         {
             "ID": "testnet",
-            "NAME": "AcadChain Testnet",
+            "NAME": "Propulence Testnet",
             "TOKEN": "ACAD",
             "RPC": "https://rpc-testnet.acadchain.xyz",
             "CHAINID": 736,
             "EXPLORER": "https://explorer-testnet.acadchain.xyz",
-            "IMAGE": "/token.svg",
+            "IMAGE": "https://f005.backblazeb2.com/file/tracehawk-prod/logo/PropFTX/Favicon.svg",
             "MAX_PRIORITY_FEE": "2000000000",
             "MAX_FEE": "100000000000",
             "DRIP_AMOUNT": 1000000000,

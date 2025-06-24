@@ -618,7 +618,7 @@ const FaucetForm = (props: any) => {
                         color="AF6E5D"
                       />
                     ) : (
-                      <span className="font">
+                      <span className="font" style={{color: 'white'}}>
                         Request {chainConfigs[token || 0]?.DRIP_AMOUNT / 1e9}{" "}
                         {chainConfigs[token || 0]?.TOKEN}
                       </span>

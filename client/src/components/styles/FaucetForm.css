@@ -138,6 +138,7 @@
   margin-top: 28px;
   border: 1px;
   width: 100%;
+  color: white;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -145,12 +146,14 @@
 
 .send-button:hover {
   background-color: #b06958;
+  color: white;
 }
 
 .send-button-disabled {
   background-color: #af6e5d;
   padding: 10px auto;
   margin-top: 28px;
+  color: white;
   height: 44px;
   border-radius: 8px;
   border: 1px;
@@ -189,15 +192,15 @@
 }
 
 .primary-button {
-  background-color: #01b4e2;
-  color: #af6e5d;
+  background-color: #af6e5d;
+  color: white;
   border-radius: 8px;
   text-decoration: none;
   display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #01b4e2;
+  border: 1px solid #af6e5d;
   justify-content: center;
   cursor: pointer;
   font-size: 16px;
@@ -228,7 +231,7 @@
   gap: 8px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #01b4e2;
+  border: 1px solid #af6e5d;
   justify-content: center;
   cursor: pointer;
   font-size: 16px;
@@ -245,7 +248,7 @@
 .explorer-btn-icon {
   width: 18px;
   height: 18px;
-  content: url(../../../public/beforebutton.svg);
+  content: url("https://f005.backblazeb2.com/file/tracehawk-prod/logo/PropFTX/Favicon.svg");
 }
 
 .success-msg {

@@ -1,72 +1,81 @@
 .container {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-box {
-    box-shadow: 0px 90.9961px 72.7969px rgba(41, 72, 152, 0.05), 0px 58.9789px 42.6334px rgba(41, 72, 152, 0.037963), 0px 35.0503px 23.1872px rgba(41, 72, 152, 0.0303704), 0px 18.1992px 11.8295px rgba(41, 72, 152, 0.025), 0px 7.4145px 5.9316px rgba(41, 72, 152, 0.0196296), 0px 1.68511px 2.86469px rgba(41, 72, 152, 0.012037);
-    max-width: 492px;
-    width: 95%;
-    border-radius: 4px;
-    height: fit-content;
-    margin-top: 20px;
-    backdrop-filter: blur(50px);
+  box-shadow: 0px 90.9961px 72.7969px rgba(41, 72, 152, 0.05),
+    0px 58.9789px 42.6334px rgba(41, 72, 152, 0.037963),
+    0px 35.0503px 23.1872px rgba(41, 72, 152, 0.0303704),
+    0px 18.1992px 11.8295px rgba(41, 72, 152, 0.025),
+    0px 7.4145px 5.9316px rgba(41, 72, 152, 0.0196296),
+    0px 1.68511px 2.86469px rgba(41, 72, 152, 0.012037);
+  max-width: 492px;
+  width: 95%;
+  border-radius: 4px;
+  height: fit-content;
+  margin-top: 20px;
+  backdrop-filter: blur(50px);
 }
 
 .footer-box-new {
-    max-width: 520px;
-    width: 100%;
-    border-radius: 4px;
-    height: fit-content;
-    margin-top: 28px;
+  max-width: 520px;
+  width: 100%;
+  border-radius: 4px;
+  height: fit-content;
+  margin-top: 28px;
 }
 .return-address {
-    display: flex;
-    align-items: center;
-    color: rgb(149, 149, 149);
-    height: 45px;
-    margin-top: 6px;
-    cursor: pointer;
-    border-radius: 8px;
+  display: flex;
+  align-items: center;
+  color: black;
+  height: 45px;
+  margin-top: 6px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 .return-address > input {
-    background-color: transparent;
-    cursor: pointer;
-    border-style: none;
-    font-family: "Catamaran";
-    text-transform: uppercase;
-    color: white;
-    padding: 14px 10px;
-    outline: none;
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400;
+  background-color: transparent;
+  cursor: pointer;
+  border-style: none;
+  font-family: "Catamaran";
+  text-transform: uppercase;
+  color: white;
+  padding: 14px 10px;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#return-address-input {
+  color: black;
 }
 
 .footer-buttons {
-    padding: 20px;
-    padding-bottom: 0px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+  padding: 20px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .add-network {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: darkgrey;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 10px;
-    min-width: 45%;
-    height: 36px;
-    border: 0px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: darkgrey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 10px;
+  min-width: 45%;
+  height: 36px;
+  border: 0px;
 }
 
 /* .add-network:hover {
@@ -75,16 +84,16 @@
 } */
 
 @media screen and (max-width: 500px) {
-    .footer-buttons {
-        padding: 20px 20px 0px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        gap: 0px;
-    }
+  .footer-buttons {
+    padding: 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 0px;
+  }
 
-    .footer-buttons > button {
-        margin-top: 10px;
-    }
+  .footer-buttons > button {
+    margin-top: 10px;
+  }
 }

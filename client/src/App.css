@@ -29,11 +29,12 @@ html {
   justify-content: space-around;
   align-items: center;
   background-size: cover;
-  background-color: #0b0f19e5;
+  background-color: #fff8f0;
 }
 
 #light {
-  background-image: url(../public/background_dcm.svg);
+  /* background-image: url(../public/background_dcm.svg); */
+  color: black;
 }
 
 #dark {
@@ -49,7 +50,7 @@ html {
 
 #light .box,
 #light .footer-box {
-  background-color: hsla(0, 0%, 100%, 0.5);
+  background-color: #f8e8e3;
 }
 
 #dark .box,
@@ -58,7 +59,7 @@ html {
 }
 
 #light .banner {
-  background-image: url(../public/banner_light.png);
+  background-image: var(--banner-dark-logo);
 }
 
 #dark .banner {
@@ -100,7 +101,7 @@ html {
 #light .contribute-button,
 #light .address-input > input,
 #light .react-select__single-value {
-  color: white;
+  color: black;
 }
 
 #dark .font,
@@ -113,7 +114,7 @@ html {
 }
 
 .font-light {
-  color: #ffffff80 !important;
+  color: black !important;
 }
 @media screen and (max-width: 1010px) {
   .app {

@@ -78,7 +78,7 @@
 }
 
 .rate-limit-text {
-  color: grey;
+  color: #af6e5d;
   font-size: 13px;
   font-weight: 300;
   word-break: break-word;
@@ -94,7 +94,7 @@
 .address-input {
   display: flex;
   align-items: center;
-  color: white;
+  color: #af6e5d;
   height: 45px;
   border-radius: 5px;
 }
@@ -163,7 +163,7 @@
 .bold-text {
   font-size: small;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.536);
+  color: #af6e5d;
 }
 
 .back-button {
@@ -185,12 +185,12 @@
 }
 .field > span {
   font-size: 14px;
-  color: #ffffffb2;
+  color: #af6e5d;
 }
 
 .primary-button {
   background-color: #01b4e2;
-  color: white;
+  color: #af6e5d;
   border-radius: 8px;
   text-decoration: none;
   display: flex;
@@ -221,7 +221,7 @@
 
 .explorer-btn {
   background-color: transparent;
-  color: white;
+  color: #af6e5d;
   border-radius: 8px;
   text-decoration: none;
   display: flex;
@@ -251,7 +251,7 @@
 .success-msg {
   font-family: "Catamaran";
   font-weight: 700;
-  color: white;
+  color: #af6e5d;
   font-size: 18px;
 }
 

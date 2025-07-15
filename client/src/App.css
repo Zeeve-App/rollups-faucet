@@ -34,7 +34,7 @@ html {
 
 #light {
   /* background-image: url(../public/background_dcm.svg); */
-  color: black;
+  color: white;
 }
 
 #dark {
@@ -88,7 +88,7 @@ html {
 }
 
 #light .copy-icon {
-  content: url(../public/copy_light.png);
+  content: url(../public/copy_dark.png);
 }
 
 #dark .copy-icon {
@@ -101,7 +101,7 @@ html {
 #light .contribute-button,
 #light .address-input > input,
 #light .react-select__single-value {
-  color: black;
+  color: white;
 }
 
 #dark .font,
@@ -114,7 +114,7 @@ html {
 }
 
 .font-light {
-  color: black !important;
+  color: white !important;
 }
 @media screen and (max-width: 1010px) {
   .app {

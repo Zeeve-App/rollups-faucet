@@ -12,8 +12,8 @@
     "evmchains": [
         {
             "ID": "testnet",
-            "NAME": "Parfin Testnet",
-            "TOKEN": "ACAD",
+            "NAME": "Rayls Bullet Testnet",
+            "TOKEN": "ETH",
             "RPC": "https://rpc-testnet.acadchain.xyz",
             "CHAINID": 736,
             "EXPLORER": "https://explorer-testnet.acadchain.xyz",

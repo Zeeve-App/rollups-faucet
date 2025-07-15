@@ -35,12 +35,12 @@
   gap: 28px;
 }
 
-.box-header > span {
+.box-header>span {
   display: flex;
   justify-content: space-between;
 }
 
-.box-header > span > span {
+.box-header>span>span {
   font-size: 14px;
 }
 
@@ -66,7 +66,7 @@
   align-items: center;
 }
 
-.select-dropdown > img {
+.select-dropdown>img {
   width: 25px;
   height: 25px;
   border-radius: 25px;
@@ -78,7 +78,7 @@
 }
 
 .rate-limit-text {
-  color: #af6e5d;
+  color: #b49aff;
   font-size: 13px;
   font-weight: 300;
   word-break: break-word;
@@ -86,7 +86,7 @@
   line-height: 20px;
 }
 
-.rate-limit-text > span {
+.rate-limit-text>span {
   margin-left: 2px;
   font-weight: 500;
 }
@@ -94,12 +94,12 @@
 .address-input {
   display: flex;
   align-items: center;
-  color: #af6e5d;
+  color: #b49aff;
   height: 45px;
   border-radius: 5px;
 }
 
-.address-input > input {
+.address-input>input {
   background-color: transparent;
   border-style: none;
   outline: none;
@@ -109,10 +109,12 @@
   margin: 0;
   padding: 0 12px;
 }
+
 .address-input:focus .address-input:active {
   border-color: #01b4e2 !important;
   background-color: #00b5e20d !important;
 }
+
 .beta-alert {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -131,7 +133,7 @@
 }
 
 .send-button {
-  background-color: #af6e5d;
+  background-color: #b49aff;
   padding: 10px auto;
   border-radius: 8px;
   height: 36px;
@@ -145,12 +147,12 @@
 }
 
 .send-button:hover {
-  background-color: #b06958;
+  background-color: #b49aff70;
   color: white;
 }
 
 .send-button-disabled {
-  background-color: #af6e5d;
+  background-color: #b49aff;
   padding: 10px auto;
   margin-top: 28px;
   color: white;
@@ -166,7 +168,7 @@
 .bold-text {
   font-size: small;
   font-weight: 600;
-  color: #af6e5d;
+  color: #b49aff;
 }
 
 .back-button {
@@ -186,13 +188,14 @@
   flex-direction: column;
   gap: 6px;
 }
-.field > span {
+
+.field>span {
   font-size: 14px;
-  color: #af6e5d;
+  color: #b49aff;
 }
 
 .primary-button {
-  background-color: #af6e5d;
+  background-color: #b49aff;
   color: white;
   border-radius: 8px;
   text-decoration: none;
@@ -200,7 +203,7 @@
   gap: 8px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #af6e5d;
+  border: 1px solid #b49aff;
   justify-content: center;
   cursor: pointer;
   font-size: 16px;
@@ -209,6 +212,7 @@
   width: 95%;
   padding: 10px 12px;
 }
+
 .primary-button-disabled {
   background-color: #01b4e2;
   padding: 10px auto;
@@ -224,14 +228,14 @@
 
 .explorer-btn {
   background-color: transparent;
-  color: #af6e5d;
+  color: #b49aff;
   border-radius: 8px;
   text-decoration: none;
   display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #af6e5d;
+  border: 1px solid #b49aff;
   justify-content: center;
   cursor: pointer;
   font-size: 16px;
@@ -248,13 +252,13 @@
 .explorer-btn-icon {
   width: 18px;
   height: 18px;
-  content: url("https://f005.backblazeb2.com/file/tracehawk-prod/logo/PropFTX/Favicon.svg");
+  content: url("https://f005.backblazeb2.com/file/tracehawk-prod/logo/Rayls/Favicon.svg");
 }
 
 .success-msg {
   font-family: "Catamaran";
   font-weight: 700;
-  color: #af6e5d;
+  color: #b49aff;
   font-size: 18px;
 }
 
@@ -271,66 +275,84 @@
     width: 80%;
     height: 100%;
   }
+
   .box-header {
     gap: 16px;
   }
-  .box-header > span {
+
+  .box-header>span {
     gap: 16px;
   }
-  .box-header > span > span {
+
+  .box-header>span>span {
     font-size: 12px;
   }
+
   .card-title {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
   .rate-limit-text {
     font-size: 12px;
     line-height: 16px;
   }
+
   .address-input {
     height: 40px;
   }
-  .address-input > input {
+
+  .address-input>input {
     font-size: 14px;
   }
+
   .beta-alert {
     font-size: 14px;
   }
+
   .send-button {
     font-size: 14px;
     height: 32px;
   }
+
   .send-button-disabled {
     font-size: 14px;
     height: 32px;
   }
+
   .bold-text {
     font-size: x-small;
   }
+
   .back-button {
     height: 32px;
     font-size: 14px;
   }
-  .field > span {
+
+  .field>span {
     font-size: 12px;
   }
+
   .primary-button {
     font-size: 14px;
     height: 32px;
   }
+
   .primary-button-disabled {
     font-size: 14px;
     height: 32px;
   }
+
   .explorer-btn {
     font-size: 14px;
     height: 32px;
   }
+
   .explorer-btn-icon {
     width: 16px;
     height: 16px;
   }
+
   .success-msg {
     font-size: 16px;
   }

@@ -85,7 +85,7 @@ const FaucetForm = (props: any) => {
           {chain.CONTRACTADDRESS && (
             <span
               style={{
-                color: "#AF6E5D",
+                color: "#b49aff",
                 fontSize: "10px",
                 marginLeft: "5px",
               }}
@@ -123,7 +123,7 @@ const FaucetForm = (props: any) => {
 
           <span
             style={{
-              color: "#AF6E5D",
+              color: "#b49aff",
               fontSize: "10px",
               marginLeft: "5px",
               alignSelf: "baseline",
@@ -397,8 +397,8 @@ const FaucetForm = (props: any) => {
       ...base,
       borderRadius: 0,
       marginTop: 0,
-      background: "#1b1832",
-      color: "#AF6E5D",
+      background: "#111111",
+      color: "#b49aff",
     }),
     menuList: (base: any) => ({
       ...base,
@@ -551,7 +551,7 @@ const FaucetForm = (props: any) => {
                     <span
                       style={
                         !errorSendingToken
-                          ? { color: "#AF6E5D" }
+                          ? { color: "#b49aff" }
                           : { color: "#D51111" }
                       }
                     >
@@ -615,10 +615,10 @@ const FaucetForm = (props: any) => {
                       <ClipLoader
                         size="20px"
                         speedMultiplier={0.3}
-                        color="AF6E5D"
+                        color="b49aff"
                       />
                     ) : (
-                      <span className="font" style={{color: 'white'}}>
+                      <span className="font" style={{ color: "white" }}>
                         Request {chainConfigs[token || 0]?.DRIP_AMOUNT / 1e9}{" "}
                         {chainConfigs[token || 0]?.TOKEN}
                       </span>

@@ -1,27 +1,29 @@
-import AddNetwork from "./AddNetwork"
+import AddNetwork from "./AddNetwork";
 
-import './styles/FooterBox.css'
-import './styles/CopyToClipboard.css'
+import "./styles/FooterBox.css";
+import "./styles/CopyToClipboard.css";
 
 function copyToClipboard(): void {
-    let copyText = document.getElementById("return-address-input") as HTMLInputElement
-    copyText.select()
-    copyText.setSelectionRange(0, 100)
-    navigator.clipboard.writeText(copyText.value)
-    
-    let tooltip = document.getElementById("tooltip-text") as HTMLSpanElement
-    tooltip.innerHTML = "Copied"
+  let copyText = document.getElementById(
+    "return-address-input"
+  ) as HTMLInputElement;
+  copyText.select();
+  copyText.setSelectionRange(0, 100);
+  navigator.clipboard.writeText(copyText.value);
+
+  let tooltip = document.getElementById("tooltip-text") as HTMLSpanElement;
+  tooltip.innerHTML = "Copied";
 }
 
 function outFunc(): void {
-    let tooltip = document.getElementById("tooltip-text") as HTMLSpanElement
-    tooltip.innerHTML = "Copy to clipboard"
+  let tooltip = document.getElementById("tooltip-text") as HTMLSpanElement;
+  tooltip.innerHTML = "Copy to clipboard";
 }
 
 export default function FooterBox(props: any) {
-    return (
-        <div className="container">
-            {/* <div className="footer-box">
+  return (
+    <div className="container">
+      {/* <div className="footer-box">
                 <div className="font" style={{fontSize: "13px", padding: "20px"}}>
                     Use the buttons below to add <b>{props.chainConfigs[props.chain!]?.NAME}</b> to your browser wallet extension
                     or visit the Subnet's block explorer.
@@ -29,24 +31,37 @@ export default function FooterBox(props: any) {
                 </div>
             </div>
              */}
-            <div className='footer-box-new'>
-                <div style={{fontSize: "14px", color: "#AF6E5D"}}>
-                    Once you are done with the testing, feel free to send the remaining coins
-                    to the following faucet address.
-
-                    <div className='return-address' onMouseOut={outFunc} onClick={copyToClipboard}>
-                        <div className="tooltip">
-                            <span className="tooltiptext" id="tooltip-text">Copy to clipboard</span>
-                        </div>
-                        
-                        <input id="return-address-input" value={props.faucetAddress} disabled/>
-
-                        <span style={{marginRight: "10px"}}>
-                            <img className="copy-icon" alt="copy" style={{width: "20px", height: "20px", display: "list-item"}}/>
-                        </span>
-                    </div>
-                </div>
+      <div className="footer-box-new">
+        <div style={{ fontSize: "14px", color: "#b49aff" }}>
+          Once you are done with the testing, feel free to send the remaining
+          coins to the following faucet address.
+          <div
+            className="return-address"
+            onMouseOut={outFunc}
+            onClick={copyToClipboard}
+          >
+            <div className="tooltip">
+              <span className="tooltiptext" id="tooltip-text">
+                Copy to clipboard
+              </span>
             </div>
+
+            <input
+              id="return-address-input"
+              value={props.faucetAddress}
+              disabled
+            />
+
+            <span style={{ marginRight: "10px" }}>
+              <img
+                className="copy-icon"
+                alt="copy"
+                style={{ width: "20px", height: "20px", display: "list-item" }}
+              />
+            </span>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }

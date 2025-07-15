@@ -1,7 +1,7 @@
 :root {
   --banner-dark-logo: url(../public/banner_dark.png);
-  --primary-color: #3498db; /* Default if JS doesn't set it */
-  --secondary-color: #5eff00;
+  --primary-color: #b49aff; /* Default if JS doesn't set it */
+  --secondary-color: #edfb4d;
 }
 
 body::-webkit-scrollbar {
@@ -29,7 +29,7 @@ html {
   justify-content: space-around;
   align-items: center;
   background-size: cover;
-  background-color: #fff8f0;
+  background-color: #111111;
 }
 
 #light {
@@ -50,12 +50,12 @@ html {
 
 #light .box,
 #light .footer-box {
-  background-color: #f8e8e3;
+  background-color: #111111;
 }
 
 #dark .box,
 #dark .footer-box {
-  background-color: #333333;
+  background-color: #000000;
 }
 
 #light .banner {

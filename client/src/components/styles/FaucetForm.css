@@ -45,12 +45,13 @@
 }
 
 .banner {
+  /* background-image: url("your.svg"); */
   background-repeat: no-repeat;
-  background-size: 190px;
-  height: 80px;
-  width: 296px;
+  background-size: 350px; /* zoom in */
+  background-position: center; /* keep it centered */
+  height: 90px; /* stays fixed */
+  width: 245px;
 }
-
 .card-title {
   align-items: center;
   display: flex;
@@ -78,7 +79,7 @@
 }
 
 .rate-limit-text {
-  color: #b49aff;
+  color: #FF8E01;
   font-size: 13px;
   font-weight: 300;
   word-break: break-word;
@@ -94,7 +95,7 @@
 .address-input {
   display: flex;
   align-items: center;
-  color: #b49aff;
+  color: #FF8E01;
   height: 45px;
   border-radius: 5px;
 }
@@ -133,7 +134,7 @@
 }
 
 .send-button {
-  background-color: #b49aff;
+  background-color: #FF8E01;
   padding: 10px auto;
   border-radius: 8px;
   height: 36px;
@@ -152,7 +153,7 @@
 }
 
 .send-button-disabled {
-  background-color: #b49aff33;
+  background-color: #FF8E01;
   padding: 10px auto;
   margin-top: 28px;
   color: black;
@@ -168,7 +169,7 @@
 .bold-text {
   font-size: small;
   font-weight: 600;
-  color: #b49aff;
+  color: #FF8E01;
 }
 
 .back-button {
@@ -191,11 +192,11 @@
 
 .field>span {
   font-size: 14px;
-  color: #b49aff;
+  color: #FF8E01;
 }
 
 .primary-button {
-  background-color: #b49aff;
+  background-color: #FF8E01;
   color: black;
   border-radius: 8px;
   text-decoration: none;
@@ -203,7 +204,7 @@
   gap: 8px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #b49aff;
+  border: 1px solid #FF8E01;
   justify-content: center;
   cursor: pointer;
   font-size: 16px;
@@ -228,14 +229,14 @@
 
 .explorer-btn {
   background-color: transparent;
-  color: #b49aff;
+  color: #FF8E01;
   border-radius: 8px;
   text-decoration: none;
   display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #b49aff;
+  border: 1px solid #FF8E01;
   justify-content: center;
   cursor: pointer;
   font-size: 16px;
@@ -258,7 +259,7 @@
 .success-msg {
   font-family: "Catamaran";
   font-weight: 700;
-  color: #b49aff;
+  color: #FF8E01;
   font-size: 18px;
 }
 

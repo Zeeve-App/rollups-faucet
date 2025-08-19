@@ -1,7 +1,7 @@
 :root {
   --banner-dark-logo: url(../public/banner_dark.png);
-  --primary-color: #b49aff; /* Default if JS doesn't set it */
-  --secondary-color: #edfb4d;
+  --primary-color: #FF8E01; /* Default if JS doesn't set it */
+  --secondary-color: #000000;
 }
 
 body::-webkit-scrollbar {

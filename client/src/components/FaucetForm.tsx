@@ -85,7 +85,7 @@ const FaucetForm = (props: any) => {
           {chain.CONTRACTADDRESS && (
             <span
               style={{
-                color: "#b49aff",
+                color: "#FF8E01",
                 fontSize: "10px",
                 marginLeft: "5px",
               }}
@@ -123,7 +123,7 @@ const FaucetForm = (props: any) => {
 
           <span
             style={{
-              color: "#b49aff",
+              color: "#FF8E01",
               fontSize: "10px",
               marginLeft: "5px",
               alignSelf: "baseline",
@@ -398,7 +398,7 @@ const FaucetForm = (props: any) => {
       borderRadius: 0,
       marginTop: 0,
       background: "#111111",
-      color: "#b49aff",
+      color: "#FF8E01",
     }),
     menuList: (base: any) => ({
       ...base,
@@ -551,7 +551,7 @@ const FaucetForm = (props: any) => {
                     <span
                       style={
                         !errorSendingToken
-                          ? { color: "#b49aff" }
+                          ? { color: "#FF8E01" }
                           : { color: "#D51111" }
                       }
                     >
@@ -615,7 +615,7 @@ const FaucetForm = (props: any) => {
                       <ClipLoader
                         size="20px"
                         speedMultiplier={0.3}
-                        color="b49aff"
+                        color="FF8E01"
                       />
                     ) : (
                       <span className="font" style={{ color: "white" }}>

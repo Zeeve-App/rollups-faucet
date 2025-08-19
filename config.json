@@ -11,11 +11,11 @@
     },
     "evmchains": [
         {
-            "ID": "testnet",
+            "ID": "rayls",
             "NAME": "Rayls Bullet Testnet",
             "TOKEN": "ETH",
-            "RPC": "https://rpc-testnet.acadchain.xyz",
-            "CHAINID": 736,
+            "RPC": "https://rpc.testnet.ecmscan.io",
+            "CHAINID": 1124,
             "EXPLORER": "https://explorer-testnet.acadchain.xyz",
             "IMAGE": "https://f005.backblazeb2.com/file/tracehawk-prod/logo/Rayls/Favicon.svg",
             "MAX_PRIORITY_FEE": "2000000000",

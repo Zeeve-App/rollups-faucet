@@ -12,12 +12,9 @@
 
 .box {
   margin: 50px auto;
-  box-shadow: 0px 90.9961px 72.7969px rgba(41, 72, 152, 0.05),
-    0px 58.9789px 42.6334px rgba(41, 72, 152, 0.037963),
-    0px 35.0503px 23.1872px rgba(41, 72, 152, 0.0303704),
-    0px 18.1992px 11.8295px rgba(41, 72, 152, 0.025),
-    0px 7.4145px 5.9316px rgba(41, 72, 152, 0.0196296),
-    0px 1.68511px 2.86469px rgba(41, 72, 152, 0.012037);
+   box-shadow: 
+    0 0 20px 4px rgba(245, 178, 96, 0.2),
+    0 0 10px 6px rgba(247, 172, 80, 0.1);
   max-width: 520px;
   width: 100%;
   padding: 32px;
@@ -45,11 +42,10 @@
 }
 
 .banner {
-  /* background-image: url("your.svg"); */
   background-repeat: no-repeat;
-  background-size: 350px; /* zoom in */
-  background-position: center; /* keep it centered */
-  height: 90px; /* stays fixed */
+  background-size: 350px; 
+  background-position: center; 
+  height: 90px; 
   width: 245px;
 }
 .card-title {
@@ -148,7 +144,7 @@
 }
 
 .send-button:hover {
-  background-color: #b49aff70;
+  background-color: #ff8d01aa;
   color: black;
 }
 
@@ -215,7 +211,7 @@
 }
 
 .primary-button-disabled {
-  background-color: #b49aff33;
+  background-color: #ff8d01aa;
   padding: 10px auto;
   margin-top: 28px;
   height: 44px;

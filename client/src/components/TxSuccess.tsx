@@ -11,7 +11,7 @@ const TxSuccess = ({ msg, txHash, explorerUrl, goBack }: TxSuccessProps) => {
   return (
     <div className="tx-success">
       <div className="success-msg">
-        Transaction successful on Rayls Bullet Testnet!{" "}
+        Transaction successful on OMA3 Testnet!{" "}
       </div>
       <div className="">
         <div className="field" style={{ marginBottom: "12px" }}>

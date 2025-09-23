@@ -1,6 +1,6 @@
 :root {
   --banner-dark-logo: url(../public/banner_dark.png);
-  --primary-color: #FF8E01; /* Default if JS doesn't set it */
+  --primary-color: #21a7f2; /* Default if JS doesn't set it */
   --secondary-color: #000000;
 }
 

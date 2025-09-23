@@ -32,7 +32,7 @@ export default function FooterBox(props: any) {
             </div>
              */}
       <div className="footer-box-new">
-        <div style={{ fontSize: "14px", color: "#FF8E01" }}>
+        <div style={{ fontSize: "14px", color: "#21a7f2" }}>
           Once you are done with the testing, feel free to send the remaining
           coins to the following faucet address.
           <div
